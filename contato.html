@@ -11,28 +11,42 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="produtos.html">Produtos</a>
-      <a href="sobre.html">Sobre</a>
       <a href="contato.html">Contato</a>
     </nav>
   </header>
 
   <main>
-    <h2>Entre em Contato</h2>
-    <form>
-      <label>
-        Nome:
-        <input type="text" name="nome" required>
-      </label>
-      <label>
-        E-mail:
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Mensagem:
-        <textarea name="mensagem" rows="5" required></textarea>
-      </label>
-      <button type="submit">Enviar</button>
-    </form>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="seu@email.com" required />
+        </label>
+        <label>
+          Assunto
+          <select name="assunto" required>
+            <option value="" disabled selected>Selecione um assunto</option>
+            <option value="orcamento">Orçamento</option>
+            <option value="outros">Outros</option>
+          </select>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        </label>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
   </main>
+
+  <footer>
+    &copy; 2025 PerfumariaAroma. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
+
